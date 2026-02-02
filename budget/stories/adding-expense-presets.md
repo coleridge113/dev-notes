@@ -22,6 +22,10 @@ data class ExpensePreset(
 )
 ```
 
+> [!NOTE] Distinction between Category and Type
+Category is Food, Commute, etc.
+Type further specifies the category (i.e. type of food, type of commute)
+
 Each table row can contain multiple presets.
 Each row will be governed by its category:
 
@@ -31,4 +35,6 @@ Each row will be governed by its category:
 | Food     | P10     | P20     | P30     |
 
 
+### Clicking the add preset button
+This opens a dialog that allows the user to select the expense type and the amount
 
