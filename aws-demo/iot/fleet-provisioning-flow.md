@@ -35,5 +35,12 @@ This is the most critical part of the code you wrote earlier:
 | Permanent | Android App | Reconnects with the new cert to start tracking. |
 
 
+> [!NOTE] On device registration:
 RS (login) -> Backend (get token) -> RS (w/ token) -> Backend (get claim) / Lambda -> RS (w/ claim) -> IOT Core (exchange claim for permanent cert & private key) -> RS creates MQTT client
+
+> [!IMPORTANT] Whoever is providing the claim must have the IotClient which requires an IAM configuration.
+
+>[!NOTE] Post-device Registration:
+RS (login) -> IOT Core (auth with X509) -> RS creates MQTT Client -> RS publishes location
+RS (token) -> IOT Core (custom authorizer) -> Lambda -> RS creates MQTT Client -> RS publishes location
 
