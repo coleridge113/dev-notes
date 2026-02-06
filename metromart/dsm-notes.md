@@ -2,7 +2,7 @@ yesterday, naka SL po ako
 
 last worked on yung bagong AWS authentication na pinapa explore ni Chris
 
-today, continue ko lang po yung pag implement nung new authentication
+today, prepare lang po ako sa demo at 2pm then kung may bagong papagwa si Chris, work on ko yun, if not, then mag support engineer lang ako for the rest of the workday
 
 
 
